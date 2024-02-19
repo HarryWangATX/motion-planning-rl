@@ -79,7 +79,7 @@ class MCTS:
     def roll_out(state: DeadlineEnv) -> int:
 
         moves = np.arange(state.n_plans)  # Get a list of all possible moves in current state of the env
-
+        state.new_times()
         reward = state.get_reward()
         while not state.is_done():
             move = random.choice(moves)
@@ -125,7 +125,7 @@ class MCTS:
         self.root = self.root.children[action]
         state_tup = tuple(new_state.get_state())
 
-        print(action, state_tup)
+        # print(action, state_tup)
 
         if state_tup in self.root.children:
             self.root = self.root.children[state_tup]

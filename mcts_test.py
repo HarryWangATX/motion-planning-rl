@@ -20,7 +20,7 @@ def print_state(state):
 
 
 def play():
-    mcts_print = False
+    mcts_print = True
     envs = get_environments()
 
     total_episode = 100
@@ -32,7 +32,7 @@ def play():
         for _ in range(total_episode):
             env = deepcopy(tmp_env)
             env.reset()
-            # print(env.state)
+            print(env.planning_times)
             mcts = MCTS(deepcopy(env))
 
             while not env.is_done():

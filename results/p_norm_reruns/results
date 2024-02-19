@@ -1,0 +1,46 @@
+P-Norm 1 - Environment 1 - Average Reward Per 10000 Episodes: 0.9379
+P-Norm 1 - Environment 2 - Average Reward Per 10000 Episodes: 0.6995
+P-Norm 1 - Environment 3 - Average Reward Per 10000 Episodes: 0.6691
+P-Norm 1 - Environment 4 - Average Reward Per 10000 Episodes: 0.8982
+P-Norm 1 - Environment 5 - Average Reward Per 10000 Episodes: 0.6925
+
+
+P-Norm 2 - Environment 1 - Average Reward Per 10000 Episodes: 0.944
+P-Norm 2 - Environment 2 - Average Reward Per 10000 Episodes: 0.6976
+P-Norm 2 - Environment 3 - Average Reward Per 10000 Episodes: 0.6703
+P-Norm 2 - Environment 4 - Average Reward Per 10000 Episodes: 0.8991
+P-Norm 2 - Environment 5 - Average Reward Per 10000 Episodes: 0.6998
+
+
+P-Norm 5 - Environment 1 - Average Reward Per 10000 Episodes: 0.9406
+P-Norm 5 - Environment 2 - Average Reward Per 10000 Episodes: 0.687
+P-Norm 5 - Environment 3 - Average Reward Per 10000 Episodes: 0.6832
+P-Norm 5 - Environment 4 - Average Reward Per 10000 Episodes: 0.8963
+P-Norm 5 - Environment 5 - Average Reward Per 10000 Episodes: 0.7001
+
+
+P-Norm 7 - Environment 1 - Average Reward Per 10000 Episodes: 0.9425
+P-Norm 7 - Environment 2 - Average Reward Per 10000 Episodes: 0.69
+P-Norm 7 - Environment 3 - Average Reward Per 10000 Episodes: 0.6827
+P-Norm 7 - Environment 4 - Average Reward Per 10000 Episodes: 0.9037
+P-Norm 7 - Environment 5 - Average Reward Per 10000 Episodes: 0.7002
+
+
+P-Norm 10 - Environment 1 - Average Reward Per 10000 Episodes: 0.9454
+P-Norm 10 - Environment 2 - Average Reward Per 10000 Episodes: 0.6929
+P-Norm 10 - Environment 3 - Average Reward Per 10000 Episodes: 0.6747
+P-Norm 10 - Environment 4 - Average Reward Per 10000 Episodes: 0.8985
+P-Norm 10 - Environment 5 - Average Reward Per 10000 Episodes: 0.6944
+
+
+P-Norm 20 - Environment 1 - Average Reward Per 10000 Episodes: 0.9425
+P-Norm 20 - Environment 2 - Average Reward Per 10000 Episodes: 0.6899
+P-Norm 20 - Environment 3 - Average Reward Per 10000 Episodes: 0.3492
+P-Norm 20 - Environment 4 - Average Reward Per 10000 Episodes: 0.9036
+P-Norm 20 - Environment 5 - Average Reward Per 10000 Episodes: 0.6963
+
+P-Norm 50 - Environment 1 - Average Reward Per 10000 Episodes: 0.9432
+P-Norm 50 - Environment 2 - Average Reward Per 10000 Episodes: 0.689
+P-Norm 50 - Environment 3 - Average Reward Per 10000 Episodes: 0.3465
+P-Norm 50 - Environment 4 - Average Reward Per 10000 Episodes: 0.9052
+P-Norm 50 - Environment 5 - Average Reward Per 10000 Episodes: 0.7024

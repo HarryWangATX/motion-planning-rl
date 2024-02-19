@@ -1,5 +1,6 @@
 from env import Actions, DeadlineEnv
 import numpy as np
+from utils import get_environments
 
 
 def linear(x):
@@ -29,41 +30,47 @@ def print_state(state, n_plans):
 
 
 if __name__ == "__main__":
-    a11 = Actions((15, 2), (15, 2))
-    a12 = Actions((15, 2), (15, 2))
-    a13 = Actions((20, 3), (20, 3))
+    a11 = Actions({1: 0.1, 2: 0.3, 5: 0.7, 8: 0.9, 9: 1}, {1: 1}, [0])
+    env = DeadlineEnv(1, [[a11]], 9)
 
-    a21 = Actions((30, 3), (10, 2))
-    a22 = Actions((15, 2), (20, 2))
-    a23 = Actions((30, 3), (20, 2))
+    env.step(0)
+    print(env.get_reward())
+    env.new_times()
+    print(env.planning_times)
 
-    a31 = Actions((20, 2), (60, 5))
-    a32 = Actions((10, 2), (5, 1))
-    a33 = Actions((10, 2), (5, 1))
 
-    a41 = Actions((10, 2), (5, 1))
-    a42 = Actions((10, 2), (5, 1))
-    a43 = Actions((40, 4), (25, 3))
-    env = DeadlineEnv(4, [[a11, a12, a13], [a21, a22, a23], [a31, a32, a33], [a41, a42, a43]], 100)
+    envs = get_environments()
 
-    won = False
-    cur_state = env.reset()
-    while True:
-        print_state(cur_state, 4)
-        print()
+    env_track = envs[0]
 
-        action = int(input("choose your action: "))
+    tally = {}
 
-        new_obs, reward, done = env.step(action)
-        print("Reward: ", reward)
-        cur_state = new_obs
-        if done:
-            print_state(cur_state, 4)
-            if reward == 1:
-                won = True
-            break
+    for i in range(10000):
+        env_track.reset()
+        if env_track.planning_times[1][0] not in tally:
+            tally[env_track.planning_times[1][0]] = 0
+        tally[env_track.planning_times[1][0]]+=1
 
-    if won:
-        print("You made it")
-    else:
-        print("You did not make it")
+    print(tally)
+
+    # won = False
+    # cur_state = env.reset()
+    # while True:
+    #     print_state(cur_state, 2)
+    #     print('\n\n\n')
+    #
+    #     action = int(input("choose your action: "))
+    #
+    #     new_obs, reward, done = env.step(action, debug=True)
+    #     print("Reward: ", reward)
+    #     cur_state = new_obs
+    #     if done:
+    #         print_state(cur_state, 2)
+    #         if reward == 1:
+    #             won = True
+    #         break
+    #
+    # if won:
+    #     print("You made it")
+    # else:
+    #     print("You did not make it")
